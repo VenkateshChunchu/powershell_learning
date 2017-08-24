@@ -1,5 +1,10 @@
 Power shell is not Case sensitive i.e Caseinsensitive a=A, true=True
 
+For Azure installation on Powershell
+https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/WindowsAzurePowershellGet.3f.3f.3fnew.appids
+Download from the link and install it
+
+
 Variable declaration
 $variableName= value
 
