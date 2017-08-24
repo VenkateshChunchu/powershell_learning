@@ -1,0 +1,77 @@
+Power shell is not Case sensitive i.e Caseinsensitive a=A, true=True
+
+Variable declaration
+$variableName= value
+
+# for type casting Variables
+ $myArray=[System.Collections.ArrayList]$myArray
+ 
+# with user defined class
+$myVariable =[myOwnClass]$myVarible
+ 
+$variableName=[System.Collections.ArrayList]$variableName # Array list declaration
+
+double(2.23) int(3212) string ("whatever")
+bool($true or $false) # 1 Means true, 0 Means False
+array ex: $myArray=2,3,5,"Ram", 1.24
+	  $myArray=2,3,4,433,24
+	  $myArray=(2,3,4,433,24)
+$myArray.Count=5
+
+ScriptBlock object ex: $myObj={2,3,4,433,24}
+
+tocheck the datatype $variableName.GetType()
+
+A string enclosed between single quotation marks is a raw string while a string enclosed between double quotation marks is an escaped string. 
+PowerShell allows any .NET methods to be called by providing their namespaces enclosed in brackets ([]), and then using a pair of colons (::) to indicate the static method.[42] For example, 
+[System.Console]::WriteLine("PowerShell")
+
+Objects are created using the New-Object cmdlet
+
+#*********************The following special characters are recognized by Windows PowerShell:
+https://technet.microsoft.com/en-us/library/dd347558.aspx
+        `0    Null
+        `a    Alert
+        `b    Backspace
+        `f    Form feed
+        `n    New line
+        `r    Carriage return
+        `t    Horizontal tab
+        `v    Vertical tab
+
+#****************************Comparison Operators*************************
+Which  Returns Boolean true or false
+-gt
+-lt
+-eq
+-ne
+-ge
+-le
+
+#*************************Logical Operators********************************
+Which  Returns Boolean true or false
+-and 
+-or
+-xor
+-not
+!
+
+#**********************loops**************************
+if(condition){}elseif{}else{}
+foreach($varible in $iterableCollection){}
+while(condition){}
+for ($i = 0; $i -le 1; $i++){"`a"}
+
+#***********Importing one script into Another*********************
+
+."C:\Desktop\ScriptFullPath.ps1"
+
+#*************To run the other script into other
+
+C:\Desktop\ScriptFullPath.ps1 -argumet1 "someValue" -argument2 $otherValue # The file path not be in double quotes
+
+*****************Commands*************
+To check the version info 
+
+>PSVersionTable.PSVersion
+
